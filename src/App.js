@@ -1,28 +1,39 @@
 import './App.css';
 
+const Details = {
+  name: "Chayon Mondol",
+  imgUrl:
+    "https://yt3.googleusercontent.com/prPE6c9CPqgvSunEp2zIydYR-5RffgeG91TAOjdk1IChIX-oTMN5zRJqG2_DnGf_vC98LOgl=s900-c-k-c0x00ffffff-no-rj",
+  imgSize: 200,
+  fontSize: "50px"
+};
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
-    </div>
+    <>
+      <h1
+        style={{
+          fontSize: Details.fontSize,
+          color: "blue",
+          textAlign: "center"
+        }}
+      >
+        {Details.name}
+      </h1>
+      <div className='img'>
+        <img
+          className="avatar"
+          src={Details.imgUrl}
+          alt={"Photos of " + Details.name}
+          style={{
+            width: Details.imgSize,
+            height: Details.imgSize,
+            border: "5px solid blue",
+          }}
+        />
+      </div>
+      <h1>WebDevoloper</h1>
+    </>
   );
 }
 

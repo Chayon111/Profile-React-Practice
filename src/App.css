@@ -29,3 +29,10 @@
 .small {
   font-size: 0.75rem;
 }
+img{
+  border-radius: 50%;
+}
+.img{
+  display: flex;
+  justify-content: center;
+}
