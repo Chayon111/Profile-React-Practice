@@ -1,4 +1,5 @@
 import './App.css';
+import SocialIcons from './Icons/Icon';
 
 const Details = {
   name: "Chayon Mondol",
@@ -32,7 +33,10 @@ function App() {
           }}
         />
       </div>
-      <h1>WebDevoloper</h1>
+      <h1>Web Developer</h1>
+      <div>
+        <SocialIcons />
+      </div>
     </>
   );
 }
